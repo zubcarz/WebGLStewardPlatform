@@ -7,8 +7,8 @@ class MainController extends React.Component {
 
     constructor(props) {
         super(props);
-        let platform = new Steward(null, 5,5,5);
-        console.log ("Create platform with Parameters \n"  + { a : "5", b : "5", d : "5"});
+        let platform = new Steward(null, 160,120,20);
+        console.log ("Create platform with Parameters \n"  + platform.getParameters());
         console.log ("Platform up vertices \n");
         console.log(platform.getVerticesUpPlatform());
         console.log ("Platform down vertices \n");
